@@ -1,0 +1,19 @@
+from flask import Flask
+
+
+app = Flask(__name__)
+
+
+@app.route('/')
+def mainpage():
+   return """
+   <!DOCTYPE html>
+   <html>
+   <head>
+   </head>
+   <body>
+       <iframe src="https://tetris.com/play-tetris" width="1500" height="770"></iframe>
+   </body>
+   </html>
+   """
+
